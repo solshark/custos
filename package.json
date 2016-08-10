@@ -3,6 +3,9 @@
   "version": "0.0.4",
   "description": "Custos JavaScript client",
   "main": "dist/app.js",
+  "bugs": {
+    "url": "https://github.com/solshark/custos/issues"
+  },
   "private": false,
   "engines": {
     "node": "6.2.x",
@@ -20,7 +23,12 @@
     "url": "https://github.com/solshark/custos.git"
   },
   "author": "Michael Shvets",
-  "license": "ISC",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],
   "dependencies": {
     "whatwg-fetch": "^1.0.0"
   },

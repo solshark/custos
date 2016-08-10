@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-
+console.log('mapper');
 export default class mapper {
   constructor(props) {
     Object.assign(this, props);
