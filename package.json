@@ -16,7 +16,7 @@
     "start": "NODE_ENV=development ./node_modules/.bin/webpack",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.prod.config.js",
     "predeploy": "npm run build",
-    "deploy": "npm update"
+    "deploy": "git add -A && git commit -m 'autocommit' && git push origin master && git push --tags && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
