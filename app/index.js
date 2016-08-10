@@ -19,3 +19,4 @@ export default class Client {
 }
 
 console.log('post export');
+console.log(Client);
