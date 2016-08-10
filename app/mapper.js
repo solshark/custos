@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 console.log('mapper');
-export default class mapper {
+export default class Mapper {
   constructor(props) {
     Object.assign(this, props);
     console.log(this);
@@ -18,3 +18,4 @@ export default class mapper {
     });
   }
 }
+console.log(Mapper);
