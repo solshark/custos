@@ -1,6 +1,6 @@
 import Mapper from './mapper';
 
-export default class Client {
+export default class {
   validate(props) {
     if (!props) {
       throw new Error('Options is required');

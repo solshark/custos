@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-export default class Mapper {
+export default class {
   constructor(props) {
     Object.assign(this, props);
     this.API_ENDPOINT = 'mapper/';
