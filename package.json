@@ -2,7 +2,7 @@
   "name": "custos",
   "version": "0.0.14",
   "description": "Custos JavaScript client",
-  "main": "dist/app.js",
+  "main": "dist/index.js",
   "bugs": {
     "url": "https://github.com/solshark/custos/issues"
   },

@@ -11,11 +11,13 @@ module.exports = {
   },
   output: {
     path: BUILD,
-    filename: '[name].js',
-    chunkFilename: '[chunkhash].js',
+    filename: 'index.js',
+    library: 'custos',
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
   },
   resolve: {
-    extensions: ['', '.js'],
+    extensions: ['.js'],
   },
   module: {
     loaders: [
@@ -23,7 +25,7 @@ module.exports = {
         test: /\.js?$/,
         loaders: ['babel?cacheDirectory'],
         include: APP,
-      }
+      },
     ],
   },
   plugins: [
