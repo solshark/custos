@@ -1,6 +1,6 @@
 {
   "name": "custos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custos JavaScript client",
   "main": "dist/app.js",
   "private": false,
@@ -9,11 +9,10 @@
     "npm": "3.9.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha --colors --compilers js:babel-register tests/**/*.spec.js --reporter min --ui bdd --timeout 3000",
     "start": "NODE_ENV=development ./node_modules/.bin/webpack",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack --config webpack.prod.config.js",
     "predeploy": "npm run build",
-    "test": "./node_modules/.bin/mocha --colors --compilers js:babel-register tests/**/*.spec.js --reporter min --ui bdd --timeout 3000",
     "deploy": "npm update"
   },
   "repository": {
