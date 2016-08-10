@@ -1,6 +1,6 @@
 {
   "name": "custos",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Custos JavaScript client",
   "main": "dist/app.js",
   "bugs": {
