@@ -1,8 +1,9 @@
 import chai, { expect } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-import Client from '../app';
+// import Client from '../app';
 import Mapper from '../app/mapper';
+import Client from '../dist/app';
 import mockOpts from './mock.opts';
 
 chai.use(chaiAsPromised);

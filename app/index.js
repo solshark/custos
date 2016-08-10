@@ -1,6 +1,6 @@
-import Mapper from './mapper';
+// import Mapper from './mapper';
 
-export default class {
+export default class Client {
   validate(props) {
     if (!props) {
       throw new Error('Options is required');
@@ -12,6 +12,6 @@ export default class {
   constructor(props) {
     this.validate(props);
     this.API_DOMAIN = 'https://api.custos.cloud/';
-    this.mapper = new Mapper();
+    // this.mapper = new Mapper();
   }
 }

@@ -13,6 +13,7 @@ module.exports = {
     path: BUILD,
     filename: '[name].js',
     chunkFilename: '[chunkhash].js',
+    library: 'Client',
   },
   resolve: {
     extensions: ['', '.js'],
