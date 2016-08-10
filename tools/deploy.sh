@@ -3,9 +3,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DIRECTORY="$DIR/tmp"
 
 if [ -d "$DIRECTORY" ]; then
-  cd $DIRECTORY && git checkout production && git pull
+  cd $DIRECTORY && git checkout master && git pull
 else
-  git clone -b production git@gitlab.wmt.dk:custos/custos.client.git $DIRECTORY
+  git clone https://github.com/solshark/custos.git $DIRECTORY
 fi
 
 cp -rv $DIR/../dist $DIRECTORY
@@ -15,4 +15,4 @@ cd $DIRECTORY && git add --all
 
 cd $DIRECTORY && git commit -m "Autocommit deployed at `date` by Mik. B. Shvets"
 
-cd $DIRECTORY && git push origin production
+cd $DIRECTORY && git push origin master
