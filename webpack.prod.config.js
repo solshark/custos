@@ -7,7 +7,7 @@ const BUILD = __dirname + '/dist';
 
 module.exports = {
   entry: {
-    app: [APP],
+    app: ['isomorphic-fetch', APP],
   },
   output: {
     path: BUILD,
@@ -17,7 +17,7 @@ module.exports = {
     umdNamedDefine: true,
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['', '.js'],
   },
   module: {
     loaders: [
@@ -26,6 +26,7 @@ module.exports = {
         loaders: ['babel?cacheDirectory'],
         include: APP,
       },
+      { test: /\.json$/, loader: 'json' },
     ],
   },
   plugins: [

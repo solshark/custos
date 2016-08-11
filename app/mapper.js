@@ -1,6 +1,5 @@
 import pick from 'lodash.pick';
 
-require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
 export default class Mapper {

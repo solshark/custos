@@ -5,10 +5,9 @@ const BUILD = __dirname + '/dist';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 
-
 module.exports = {
   entry: {
-    app: [APP],
+    app: ['isomorphic-fetch', APP],
   },
   output: {
     path: BUILD,
@@ -25,6 +24,7 @@ module.exports = {
         loaders: ['babel?cacheDirectory'],
         include: APP,
       },
+      { test: /\.json$/, loader: 'json' },
     ],
   },
   devtool: 'eval-source-map',
