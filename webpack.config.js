@@ -20,7 +20,7 @@ module.exports = {
         root: 'isomorphic-fetch',
         commonjs2: 'isomorphic-fetch',
         commonjs: 'isomorphic-fetch',
-        amd: 'isomorphic-fetch'
+        amd: 'isomorphic-fetch',
       },
     },
   ],

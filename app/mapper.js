@@ -32,7 +32,7 @@ export default class Mapper {
           'x-api-key': 'cQyv0BGJEe4rhPRhUn2c6ocEbW6ZG4H6P94Dw4Ng',
         },
         body: JSON.stringify(body),
-      }).then((res) => fulfill(res));
+      }).then((res) => fulfill(res)).catch((err) => reject(err));
     });
   }
   remove(opts) {
@@ -58,7 +58,7 @@ export default class Mapper {
           'x-api-key': 'cQyv0BGJEe4rhPRhUn2c6ocEbW6ZG4H6P94Dw4Ng',
         },
         body: JSON.stringify(body),
-      }).then((res) => fulfill(res));
+      }).then((res) => fulfill(res)).catch((err) => reject(err));
     });
   }
 }
