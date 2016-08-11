@@ -23,7 +23,9 @@ export default class Mapper {
       REQUIRED_FIELDS.forEach((field) => {
         if (!body[field]) return reject(new Error(`opts.${field} is required`));
       });
-      fetch(`${this.API_ENDPOINT}/add`, {
+      const url = `${this.API_ENDPOINT}/add`;
+      console.log(url);
+      fetch(url, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
