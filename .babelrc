@@ -1,8 +1,25 @@
 {
   "presets": ["es2015"],
-  "plugins": [
-    "transform-class-properties",
-    "add-module-exports",
-    "transform-es2015-modules-umd"
-  ]
+  "env": {
+    "test": {
+      "plugins": [
+        "transform-class-properties",
+        "add-module-exports"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "transform-class-properties",
+        "add-module-exports",
+        "transform-es2015-modules-umd"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-class-properties",
+        "add-module-exports",
+        "transform-es2015-modules-umd"
+      ]
+    }
+  }
 }

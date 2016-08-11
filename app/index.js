@@ -1,4 +1,6 @@
-// import Mapper from './mapper';
+import Mapper from './mapper';
+
+import { version } from '../package.json';
 
 export default class Client {
   validate(props) {
@@ -13,5 +15,6 @@ export default class Client {
     this.validate(props);
     this.API_DOMAIN = 'https://api.custos.cloud/';
     this.mapper = new Mapper();
+    this.VERSION = version;
   }
 }

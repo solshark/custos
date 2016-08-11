@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 
 module.exports = {
   entry: {
-    app: APP,
+    app: ['whatwg-fetch', APP],
   },
   output: {
     path: BUILD,
