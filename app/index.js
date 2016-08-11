@@ -15,6 +15,7 @@ export default class Client {
     this.validate(props);
     this.API_DOMAIN = 'https://api.custos.cloud';
     this.VERSION = version;
+    this.API_KEY = props.API_KEY;
     this.mapper = new Mapper(this);
   }
 }
