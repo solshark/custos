@@ -7,7 +7,7 @@ const BUILD = __dirname + '/dist';
 
 module.exports = {
   entry: {
-    app: ['whatwg-fetch', APP],
+    app: [APP],
   },
   output: {
     path: BUILD,
