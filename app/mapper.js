@@ -30,7 +30,7 @@ export default class Mapper {
           Accept: 'application/json',
           'Content-Type': 'application/json',
           'User-Agent': `Custos-JS-Client-${this.VERSION}`,
-          'x-api-key': 'cQyv0BGJEe4rhPRhUn2c6ocEbW6ZG4H6P94Dw4Ng',
+          'x-api-key': this.API_KEY,
         },
         body: JSON.stringify(body),
       }).then((res) => fulfill(res)).catch((err) => reject(err));
@@ -55,7 +55,7 @@ export default class Mapper {
           Accept: 'application/json',
           'Content-Type': 'application/json',
           'User-Agent': `Custos-JS-Client-${this.VERSION}`,
-          'x-api-key': 'cQyv0BGJEe4rhPRhUn2c6ocEbW6ZG4H6P94Dw4Ng',
+          'x-api-key': this.API_KEY,
         },
         body: JSON.stringify(body),
       }).then((res) => fulfill(res)).catch((err) => reject(err));
