@@ -5,5 +5,7 @@
     "add-module-exports",
     "transform-es2015-modules-umd",
     "transform-object-assign",
+    "transform-remove-console",
+    "remove-comments",
   ],
 }

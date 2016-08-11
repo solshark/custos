@@ -14,7 +14,7 @@ export default class Client {
   constructor(props) {
     this.validate(props);
     this.API_DOMAIN = 'https://api.custos.cloud/';
-    this.mapper = new Mapper();
     this.VERSION = version;
+    this.mapper = new Mapper(this);
   }
 }
