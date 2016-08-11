@@ -24,7 +24,6 @@ export default class Mapper {
         if (!body[field]) return reject(new Error(`opts.${field} is required`));
       });
       const url = `${this.API_ENDPOINT}/add`;
-      console.log(url);
       fetch(url, {
         method: 'POST',
         headers: {
@@ -39,7 +38,6 @@ export default class Mapper {
   }
   remove(opts) {
     return new Promise((fulfill, reject) => {
-
       if (!opts) return reject(new Error('opts is required'));
       const ALLOWED_FIELDS = [
         'id',
