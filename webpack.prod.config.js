@@ -16,6 +16,16 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
+  externals: [
+    {
+      'isomorphic-fetch': {
+        root: 'isomorphic-fetch',
+        commonjs2: 'isomorphic-fetch',
+        commonjs: 'isomorphic-fetch',
+        amd: 'isomorphic-fetch',
+      },
+    },
+  ],
   resolve: {
     extensions: ['', '.js'],
   },

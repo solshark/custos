@@ -14,6 +14,16 @@ module.exports = {
     filename: '[name].js',
     publicPath: '/',
   },
+  externals: [
+    {
+      'isomorphic-fetch': {
+        root: 'isomorphic-fetch',
+        commonjs2: 'isomorphic-fetch',
+        commonjs: 'isomorphic-fetch',
+        amd: 'isomorphic-fetch'
+      },
+    },
+  ],
   resolve: {
     extensions: ['', '.js'],
   },
