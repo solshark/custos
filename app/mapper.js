@@ -6,6 +6,7 @@ export default class Mapper {
   constructor(props) {
     Object.assign(this, props);
     this.API_ENDPOINT = `${this.API_DOMAIN}/mapper`;
+    console.log(this.API_KEY);
   }
   add(opts) {
     return new Promise((fulfill, reject) => {
