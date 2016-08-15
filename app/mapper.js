@@ -18,7 +18,6 @@ export default class Mapper {
       ];
       const body = pick(opts, ALLOWED_FIELDS);
       const REQUIRED_FIELDS = [
-        'ip',
         'id',
       ];
       REQUIRED_FIELDS.forEach((field) => {

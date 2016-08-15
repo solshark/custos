@@ -20,12 +20,6 @@ describe('### Mapper module', () => {
       const mapper = new Mapper();
       return expect(mapper.add()).to.be.rejectedWith(Error, 'opts is required');
     });
-    it('# should throw if no ip provided', () => {
-      const opts = mockOpts();
-      delete opts.ip;
-      const mapper = new Mapper();
-      return expect(mapper.add(opts)).to.be.rejectedWith(Error, 'opts.ip is required');
-    });
     it('# should throw if no id provided', () => {
       const opts = mockOpts();
       delete opts.id;
